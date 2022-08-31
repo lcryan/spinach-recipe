@@ -74,7 +74,7 @@
 Bewaar afgedekt in de koelkast en laat tijdens het voorverwarmen van de oven op kamertemperatuur komen.
 <br>
 <br>
-<h2>Bedankt voor het lezen van onze recept! Laat ons weten wat ervan vond?</h2>
+<h2>Bedankt voor het lezen van onze recept! Laat je ons weten wat ervan vond?</h2>
 
 <footer>
     <form>
@@ -100,22 +100,34 @@ Bewaar afgedekt in de koelkast en laat tijdens het voorverwarmen van de oven op 
             </select>
             <br>
             <br>
-            <legend>Zou je dit recept willen uitproberen?</legend>
-            <br>
-            <input type="radio" name="choice" value="yes">Ja</input>
-            <input type="radio" name="choice" value="no">Nee</input>
-            <input type="radio" name="choice" value="maybe">Misschien</input><br>
+            <p>Zou je dit recept willen uitproberen?</p>
 
+            <input type="radio" name="choice-yes" value="yes" id="yes">
+            <label for="yes">Ja</label>
+
+            <input type="radio" name="choice-no" value="no" id="no">
+            <label for="no">Nee</label>
+
+            <input type="radio" name="choice-maybe" value="maybe" id="maybe">
+            <label for="maybe">Misschien</label>
+
+            <br>
             <br>
             <label for="comments">Opmerkingen:</label><br>
             <textarea name="comments" id="comments" cols="36" rows="4"
                       placeholder="Wat vond je van het recept?"></textarea>
             <br>
             <br>
-            <input type="checkbox" name="newsletter" value="yes" checked>
+
+            <input type="checkbox" name="newsletter" id="newsletter" value="yes" checked>
             <label for="newsletter">Schrijf me in voor de nieuwsbrief!</label>
+            <br>
+            <br>
+            <input type="submit" name="submit-button" id="submit-button" value="Verzenden">
 
 
+        </fieldset>
+    </form>
 </footer>
 
 </body>
